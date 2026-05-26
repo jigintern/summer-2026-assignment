@@ -51,6 +51,13 @@ jobs:
           output: dest/index.html
           config: .github/workflows/config.json
 
+      - name: C版HTMLの生成
+        uses: jaywcjlove/markdown-to-html-cli@main
+        with:
+          source: index-c.md
+          output: dest/index-c.html
+          config: .github/workflows/config.json
+
       - name: デバッグ出力
         run: |
           ls -la dest/
