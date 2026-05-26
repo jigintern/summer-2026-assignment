@@ -1,13 +1,20 @@
-<style>
+<!-- <style>
   html {
     display: flex;
     justify-content: center;
   }
   body {
     width: 100vw;
-    max-width: 700px;
+    max-width: 1100px;
     background-color: #EEE;
     color: #4d4d4d;
+  }
+  /* --- スマホ・タブレット向け（画面幅が1024px以下のとき適用） --- */
+  @media screen and (max-width: 1024px) {
+    body {
+      padding: 0 20px; /* 画面端に余白を設ける */
+      max-width: none; /* 最大幅の制限を解除 */
+    }
   }
   img {
     width: 80%;
@@ -37,6 +44,39 @@
   }
   p {
     padding-left: 0.6em;
+  }
+</style> -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.css" rel="stylesheet"></link>
+<style>
+  img {
+    width: 80%;
+    max-width: 800px;
+    margin-left: 5%;
+    outline: solid #4d4d4d;
+  }
+  /* コードブロック（```で囲まれた複数行コード）の視認性を強化 */
+  pre {
+    background-color: #f3f4f6 !important;
+    border: 1px solid #d0d7de !important;
+    border-left: 4px solid #4d4d4d !important;
+    border-radius: 6px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    padding: 14px 16px !important;
+  }
+  pre code {
+    background-color: transparent !important;
+    padding: 0 !important;
+    font-size: 0.95em;
+    line-height: 1.55;
+  }
+  /* インラインコード（文中の `code`）の視認性を強化 */
+  :not(pre) > code {
+    background-color: #eef1f4 !important;
+    border: 1px solid #d8dde3;
+    border-radius: 4px;
+    padding: 0.15em 0.35em !important;
+    font-size: 0.9em;
   }
 </style>
 
