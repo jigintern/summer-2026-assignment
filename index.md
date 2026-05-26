@@ -78,6 +78,23 @@
     padding: 0.15em 0.35em !important;
     font-size: 0.9em;
   }
+  /* ダークモード時の上書き（OSの配色設定に追従） */
+  @media (prefers-color-scheme: dark) {
+    pre {
+      background-color: #161b22 !important;
+      border: 1px solid #30363d !important;
+      border-left: 4px solid #8b949e !important;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+    :not(pre) > code {
+      background-color: rgba(110, 118, 129, 0.4) !important;
+      border: 1px solid #30363d;
+      color: #e6edf3;
+    }
+    img {
+      outline-color: #8b949e;
+    }
+  }
 </style>
 
 # jig.jp サマーインターンシップ 選考課題(Webコース、Claude Code で学ぶ実践開発)
