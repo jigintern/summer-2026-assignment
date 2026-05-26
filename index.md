@@ -930,37 +930,51 @@ Deno Deployでアカウント登録しましょう。Deno Deployのアカウン�
 [https://deno.com/deploy](https://deno.com/deploy)
 
 ![](./imgs/13_deno-home.png)
-![](./imgs/14_deno-github.png)
+
+### Organizationを作成しよう
+
+アカウント作成後、Organizationを作成します。  
+nameとslugにはこだわりがなければ自分のGitHubのユーザー名をセットしておくのがいいでしょう。  
+入力後、**Create organization**を押して作成します。
+
+![](./imgs/14-deno-deploy-organization.png)
 
 ### Deno Deployのプロジェクトを作成しよう
 
-早速、Deno Deployのプロジェクトを作ってみましょう。
-
+早速、Deno Deployのプロジェクトを作ってみましょう。  
 GitHubのリポジトリを元に、Deno Deployのプロジェクトを作成します。
 
-1. 「New Project」をクリックして、新規プロジェクトの作成画面を開きましょう。
+1. Deno DeployのOrganizationのトップを開きます
 
 ![](./imgs/15_deno-deploy-home.png)
 
-2. 「Select User or Organization」から「Add Github Account」を選択します。
+2. 「New App」をクリックして、新規プロジェクトの作成画面を開きましょう。
 
-![](./imgs/16_deno-deploy-select-user.png)
+![](./imgs/16_deno-deploy-new-app.png)
 
-3. Deno Deployから全てのリポジトリへのアクセスを許可する場合は「All repositories」、一部のリポジトリにのみ絞りたい場合は「Only select repositories」を選択して、作成したWebアプリのリポジトリを指定しましょう。
+3. 「Select User or Organization」から順に作成したしりとりアプリのリポジトリを指定します。
 
-![](./imgs/17_deno-deploy-github-install.png)
+![](./imgs/17_deno-deploy-new-app-ready.png)
 
-4. 以下のようにアカウント設定、リポジトリを指定し、「Entrypoint」には`server.js`を指定して、「Deploy Project」をクリックします。
+4. 「Edit app config」を選択し、下記の設定画面を開きます
 
-![](./imgs/18_deno-create-new-project-1.png)
-![](./imgs/19_deno-create-new-project-2.png)
+![](./imgs/18_deno-deploy-new-app-config.png)
+
+5. 「Runntime Configuration」を「Static Site」から「Dynamic App」に切り替えて、「Entrypoint」に `server.js` を指定します。
 
 > Topic: Entrypointに指定したDenoファイルが、サーバー起動時に自動で実行されます。
 
-5. しばらくするとデプロイが完了します。以下の画像の二枚目の画面になったら、完了です。表示されているリンクをクリックしてWebサイトを開いてみましょう！
+![](./imgs/19_deno-deploy-new-app-config-ready.png)
 
-![](./imgs/20_deno-deploying.png)
-![](./imgs/21_deno-deploy-success.png)
+6. 設定を閉じて、末尾の「Create App」を押します。
+
+
+
+
+
+7. しばらくするとデプロイが完了します。画像のようにBuildの各ステップにチェックが入れば完了です。画面右上に表示されているリンクをクリックしてWebサイトを開いてみましょう！
+
+![](./imgs/20_deno-deploy-done.png)
 ![](./imgs/22_deno-deploy-web-site.png)
 
 ## Step14. おわりに
