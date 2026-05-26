@@ -395,7 +395,7 @@ gcc shiritori.c -o shiritori
 次の単語を入力してください >
 ```
 
-> Topic: Step 5 までを実装したサンプルが `sample-c/shiritori.c` にあります。  
+> Topic: Step 5 までを実装したサンプルが、[こちら](https://github.com/jigintern/summer-2026-assignment/blob/main/sample-c/shiritori.c)にあります。  
 > 詰まったら参考にしてみてください。
 
 ## Step 6. しりとり実装(2): 「ん」終了 + 履歴管理
